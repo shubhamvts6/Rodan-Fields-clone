@@ -338,7 +338,7 @@ function makepage(cagarr){
 var x=document.createElement("div")
 x.setAttribute("class","smallbox")
 var imag=document.createElement("img")
-imag.setAttribute("src",elem.img);
+imag.setAttribute("src",elem.img||elem.img_url);
 var name=document.createElement("h3");
 name.textContent=elem.name;
 var y=document.createElement("div")
@@ -362,7 +362,6 @@ function DeleteItem(i){
     localStorage.setItem("Bagitems",JSON.stringify(cagarr))
     makepage(cagarr)
   }
-
   var sum=0;
  for (var i=0; i<cagarr.length; i++){
      sum+=Number(cagarr[i].price)
@@ -371,6 +370,9 @@ function DeleteItem(i){
  total.textContent="$"+sum
  var btn2=document.createElement("button")
  btn2.textContent="Continue To Payment"
+ btn2.addEventListener("click",function(){
+    window.location.href='payment.html'
+ })
  document.querySelector("#container2").append(total,btn2)
 
 
