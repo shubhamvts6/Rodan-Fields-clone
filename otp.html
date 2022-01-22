@@ -73,7 +73,7 @@ transform: translate(-50%,-50%);
 </html>
 <script>
      document.querySelector("form").addEventListener("submit",formsubmit);
- var userpile = JSON.parse(localStorage.getItem("otpdatabase"));
+ var userpile = JSON.parse(localStorage.getItem("otpdatabase"))||[];
     function formsubmit(event){
         event.preventDefault();
         var ps_1 = document.querySelector("#ps_1").value;
