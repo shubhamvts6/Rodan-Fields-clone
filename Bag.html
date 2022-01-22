@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAY1BMVEX///9WVlpRUVXPzs75+fl3d3ri4uN9fYBDQ0hMTFCJiYvJycpQUFRwcHOSkpRHR0y5ubpcXGDc3N3U1NWampxiYmZra27u7u6hoaKysrSDg4asrK7x8fJ5eXu8vL7n5+c4OD7xJQtnAAADZUlEQVR4nO3dYV+iMACA8TGhWg6IUkg89b7/pzyzuws2kIF1t63n/1YFn1/pBkwVq8gJAAAAAAAAAAAAAAAAAAAAAAAAAAC+sbR+iMnPvRWYySQiakdg2AgM3XcMzLWMSGkHFllM8qM90sfF6gMAAAAAAAAAAAAAwBf79nG+YrNfN7Ouh8+4gr5Z8ITeta8DmyvUgtUaWqtS5fsfzn2n/HCWDT0BS714YYu6HwrUSxfdSKWtVSlj7h4uT+DR5b754qVJ8nMDz8rWNbC8PIHgAhO1iTwwUevIA+Uh8sBEP0ceaC9g9DrwPMJNMPfu9qRvCJwzPE8GysfNhKLdqv7+s68NrOcspiymAvXd9P7TYz+w/tJAvbp1NWU/0OkdY6f/YeCLy0OuWRDYbCMPFN2F7FEGHmIPvCfQRGAHgfMQOIBAS2CBsQ/0aZ3EHfgS8GTb4XDpPNeWswNPiwOPdyNOLtsS5gHvbj1l36reAanMP7aVjj5qdzlKlofRO3T+dfoHvFoNK50OtM3A0c11GOcsZOfcb5OMPej3TuTY7Q+d86tu52QGz79MB86nO9cbmuoztuJZoOq8C8QYKOvOJaYYA3sfe44wUGfdE1nxvcnobdPdVnp8GrG/7EXmY7c/dV7J/gRK1bpe41080P+3QKlVkrldOnvz+dcmBk/TTwf2B3prT39vrvLi6DKtuz2w2g6rXC8uX5mLpplxGeKw+IsGlk+23Q7grrh2NJG2RmG1dHfeHE0YAWlhFCb2l2E48TVQpJt+YW9EnsHbQCHMQtUueSF6HChezb9h3dh3muJzoNgZhVKuZu/F60BxNAoT9yVcf/gdKNbmbEcPXQy/xvNAsTILVea+0vCN74HiJTGmbXo7Z6bmf6B4NguldJ9qhxAoTltz6l3OGPMDCBRNbb0Q3cf8EAJFk1tvprXr6eUgAt++JtAolJXj/sMIFOnBKtRPTnsJJFCI1pzUJKXTouZgAsWmNAtV7vBWE06geLUKZTU95gcUKPZ2YTI55vsSqFzOueztVb/K+nprw3ugnh+obg9Mqg+J23rRyiKL6y/EO33ZvNNBSNbdcHJzIAAAAAAAAAAAAAAA+DdOYx/jDpO1EDnNl3yBqrcGfoc3+l9SJjAoBIbuOwbG/3Pt9zHJFn5CFQCAqPwC1B6EAfvTPPcAAAAASUVORK5CYII="
+    type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <style>
+        #maincontainer{
+            display: flex;
+        }
+         #consultant{
+        width: 15%;
+        background-color: rgb(255, 255, 255);
+       margin-top: 1%;
+       margin-left: 2%;
+       
+    }
+    
+    #logo{
+    width:60%;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+       margin-left: 42.5%;
+       margin-top: -4.25%;
+      
+    }
+    #search{
+        width: 20%;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-top: -5.25%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    h5{
+        font-family: 'Outfit', sans-serif;
+        word-spacing: 5px;
+        font-size: small;
+    }
+    #line{
+        width: auto;
+        padding: 1px;
+        height: auto;
+        background-color: black;
+        
+    }
+    .nav_bar{
+        width: 70%;
+        padding: 1px;
+        height: auto;
+        background-color: rgb(252, 252, 252);
+        display: flex;
+        justify-content: space-around;
+        margin-left: 15%;
+        margin-right: -15%;
+        margin-top: -1.315%;}
+        h1{
+           font-family: sans-serif;
+           font-size: 40px;
+        }
+        
+        #container{
+            width: 45%;
+            margin-top: 50px;
+        }
+        #container>div{
+            display:flex;
+          align-items: center;
+          margin:10px 0;
+          justify-content: space-between;
+        }
+
+        img{
+            width:20%
+        }
+        h3{
+            font-size: 18px;
+        }
+        .remove{
+            margin:0% 0 30% 0;
+            border:0;
+            padding:10px 20px;
+            background-color: #518bac;
+            color: white;
+        }
+        .smallbox>div{
+            height:180px;
+            width:20%
+        }
+       .smallbox2> p{
+            margin:30% 0;
+            font-size: 22px;
+        }
+        #container2{
+            width:40%;
+            height:500px;
+            margin:50px 0 0 20px;
+            text-align: center;
+        }
+        button{
+        background-color: black;
+        color: white;
+        padding: 20px 60px;
+        font-size: 18px;
+        }
+        h2{
+            color: red;
+            font-size: 30px;
+        }
+        #lowercon{
+        width:100%;
+        display: flex;
+        height:300px;
+    }
+    #one{
+        width:20%;
+    }
+    #two{
+        width:23%;
+    }
+    #three{
+        width:50%;
+    }
+    </style>
+</head>
+<body>
+    <div id="consultant">
+        <h5>
+            FIND A CONSULTANT
+        </h5>
+
+    </div>
+    <div id="logo">
+        <img src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+        alt="logo">
+               </div>
+      
+               <div id="search">
+                <h5>Search
+                    <i class="fas fa-search"></i>
+                </h5>
+                <h5>Sign in
+                    <i class="fas fa-user"></i>
+                </h5>
+                <h5><i class="fas fa-shopping-bag"></i></h5>
+                <h5>
+                   
+                    English
+                </h5>
+                       </div>
+     
+                       <div id="line"></div>
+      
+                       <br>
+
+       <div class="nav_bar"> 
+           <h5 style="color: rgb(0, 0, 0)">SHOP</h5>
+           <h5 style="color: rgb(0, 0, 0)">BEST SELLERS</h5>
+           <h5 style="color: rgb(0, 0, 0)">FEATURED</h5>
+           <h5 style="color: rgb(0, 0, 0)">OUR STORY</h5>
+           <h5 style="color: rgb(0, 0, 0)">PERKS PROGRAM</h5>
+           <h5 style="color: rgb(0, 0, 0)">BECOME A CONSULTANT</h5>
+           <h5 style="color: rgb(0, 0, 0)">BLOG</h5>
+       </div>
+       <h1 style="font-size: 40px;">Your Bag Page</h1>
+       <div id="maincontainer">
+    <div id="container"></div>
+    <div id="container2">
+        <h1>Estimated Total</h1>
+    </div>
+    </div>
+    <hr>
+    <div id="lowercon">
+        <div id="one">
+            <h4>About R+F</h4>
+            <p>Press Room</p>
+            <p>Company Info</p>
+            <p>Executive Team</p>
+            <p>Careers</p>
+            <p>R+F Recycling Program</p>
+            <p>Blog</p>
+        </div>
+        <div id="two">
+            <h4>Help</h4>
+            <p>Product &help Center</p>
+            <p>Shipping</p>
+            <p>Satisfaction Guarantee</p>
+            <p>Promotional Terms & Conditions</p>
+            <p>R+F Facts</p>
+            <p>Klarna</p>
+            <p>Site Help</p>
+        </div>
+        <div id="three">
+            <h2 style="color: black;">Let's Get Social</h2>
+        </div>
+    </div>
+    <hr>
+    <h4>© 2022 Rodan & Fields | Privacy Policy | Terms & Conditions | Accessibility |  California Supply Chains Act |  DSA Code Of Ethics |  Disclaimer | Preference Center </h4>
+</body>
+</html>
+
+<script>
+ var cagarr=JSON.parse(localStorage.getItem("Bagitems"))|| []
+ makepage(cagarr)
+function makepage(cagarr){
+    document.querySelector("#container").innerHTML=""
+  cagarr.map(function(elem,i){
+var x=document.createElement("div")
+x.setAttribute("class","smallbox")
+var imag=document.createElement("img")
+imag.setAttribute("src",elem.img);
+var name=document.createElement("h3");
+name.textContent=elem.name;
+var y=document.createElement("div")
+y.setAttribute("class","smallbox2")
+var pric=document.createElement("p");
+pric.textContent="$"+elem.price
+var btn1=document.createElement("button");
+btn1.textContent="Remove";
+btn1.setAttribute("class","remove")
+btn1.addEventListener("click",function(){
+    DeleteItem(i)
+})
+y.append(pric,btn1)
+x.append(imag,name,y)
+document.querySelector("#container").append(x)
+  })
+}
+
+function DeleteItem(i){
+    cagarr.splice(i,1)
+    localStorage.setItem("Bagitems",JSON.stringify(cagarr))
+    makepage(cagarr)
+  }
+
+  var sum=0;
+ for (var i=0; i<cagarr.length; i++){
+     sum+=Number(cagarr[i].price)
+ }
+ var total=document.createElement("h2")
+ total.textContent="$"+sum
+ var btn2=document.createElement("button")
+ btn2.textContent="Continue To Payment"
+ document.querySelector("#container2").append(total,btn2)
+
+
+
+</script>
