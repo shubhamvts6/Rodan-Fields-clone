@@ -218,6 +218,22 @@
             text-decoration: none;
         }
 
+        @media only screen and (max-width:600px) {
+        #subcontainer{
+            grid-template-columns: repeat(1,90%);
+            grid-template-rows: repeat(12,500px);
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (min-width:601px) and (max-width:780px){
+        #subcontainer{
+            grid-template-columns:repeat(2,45%);
+            grid-template-rows: repeat(6,500px);
+            justify-content: center;
+        }
+    }
+
      
     </style>
 </head>
