@@ -111,35 +111,25 @@
     event.preventDefault();
     var pass = document.querySelector("#pass").value;
     var user = document.querySelector("#user").value;
-
+var count =0;
     for (var i=0; i<regdUsers.length;i++) 
     {
       // console.log(regdUsers[i].userName, regdUsers[i].passwd);
   if ((regdUsers[i].userName == user) && (regdUsers[i].passwd == pass)) {
-    alert("login success");
-    window.location.href = "home.html";
-    
-  }
-<<<<<<< HEAD
-  else 
-    alert("login.fail");
-    window.location.href = "signup.html";
-  
-
+ count++}}
+ if(count>0){
+     
+  alert("login success");
+    window.location.href = "home.html"
+ }
     
   
-  } 
-
-}
-    
-=======
   else {
     alert("login fail");
     window.location.href = "signup.html"
     }
   }
-}    
+  
 
->>>>>>> 9066476d3b83c80cfd7d8c05f74e30475cb5abb1
 
 </script>
