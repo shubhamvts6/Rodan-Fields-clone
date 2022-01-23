@@ -105,29 +105,26 @@
 <script>
   document.querySelector("form").addEventListener("submit", signin);
 
-  var regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
+  var regdUsers = JSON.parse(localStorage.getItem("userDataBase"))||[];
 
   function signin(event) {
     event.preventDefault();
     var pass = document.querySelector("#pass").value;
     var user = document.querySelector("#user").value;
 
-    for (var i = 0; i < regdUsers.length; i++) 
+    for (var i=0; i<regdUsers.length;i++) 
     {
-      console.log(regdUsers[i].userName, regdUsers[i].passwd);
-  if ((regdUsers[i].userName == user && regdUsers[i].passwd == pass)) {
+      // console.log(regdUsers[i].userName, regdUsers[i].passwd);
+  if ((regdUsers[i].userName == user) && (regdUsers[i].passwd == pass)) {
     alert("login success");
     window.location.href = "home.html";
     
-  }else 
+  }
+  else {
     alert("login fail");
-    window.location.href = "signup.html";
-
-    
-  
+    window.location.href = "signup.html"
     }
-
-}
-    
+  }
+}    
 
 </script>
